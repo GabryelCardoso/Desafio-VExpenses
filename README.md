@@ -54,7 +54,7 @@ Você será solicitado a inserir suas credenciais da AWS, incluindo:
 - Default region name (por exemplo, us-east-1)
 - Default output format (por exemplo, json)
 
-### 5. Alterar a Variável `local_ip`
+### 5. Alterar a variável `local_ip`
 
 Abra o arquivo `main.tf` e altere o valor default da variável `local_ip` para o endereço IPv4 da sua máquina local. O arquivo deve ficar parecido com o exemplo abaixo:
 
@@ -91,6 +91,7 @@ Para destruir a infraestrutura provisionada, utilize:
 terraform destroy
 ```
 
+
 ## Conclusão
 
-Seguindo esses passos, você será capaz de baixar todas as dependências e executar o projeto Terraform com sucesso. Se tiver alguma dúvida, consulte a [documentação oficial do Terraform](https://www.terraform.io/docs/index.html).
+O objetivo do código `main.tf` é definir e provisionar a infraestrutura necessária para o projeto utilizando o Terraform. Ele especifica os recursos da AWS que serão criados, que são: vpc, sub-rede, gateway de internet, tabela de rotas, associação da tabela de rotas, grupo de segurança e uma instância EC2 com um servidor NGINX automatizado.
