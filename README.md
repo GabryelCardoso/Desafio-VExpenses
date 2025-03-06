@@ -17,8 +17,8 @@ Antes de começar, certifique-se de ter os seguintes itens instalados:
 Primeiro, clone o repositório do projeto para o seu ambiente local:
 
 ```sh
-git clone <https://github.com/GabryelCardoso/Desafio-VExpenses.git>
-cd <Desafio-VExpenses>
+git clone https://github.com/GabryelCardoso/Desafio-VExpenses.git
+cd Desafio-VExpenses
 ```
 
 ### 2. Inicializar o Terraform
@@ -56,7 +56,7 @@ Você será solicitado a inserir suas credenciais da AWS, incluindo:
 
 ### 5. Alterar a variável `local_ip`
 
-Abra o arquivo `main.tf` e altere o valor default da variável `local_ip` para o endereço IPv4 da sua máquina local. O arquivo deve ficar parecido com o exemplo abaixo:
+Abra o arquivo `main.tf` e altere o valor padrão da variável `local_ip` para o endereço IPv4 da sua máquina local. O arquivo deve ficar parecido com o exemplo abaixo:
 
 ```hcl
 variable "local_ip" {
